@@ -39,13 +39,13 @@ angular.module('td.easySocialShare', [])
           }
 
           if (sites.indexOf(key) > -1) {
-            shareLinks.push({network: key, url: theLink});
+            shareLinks.push({network: key, url: theLink, title: pageTitle});
           }
         });
 
         for (i = 0; i < shareLinks.length; i++) {
           var anchor = '';
-          anchor += '<a href="'+ shareLinks[i].url + '"';
+          anchor += '<a href="'+ shareLinks[i].url + '" alt="'+ shareLinks[i].title + '" ';
           anchor += ' class="fa fa-'+shareLinks[i].network + square + '" target="_blank"';
           anchor += '></a>';
           elem.append(anchor);
