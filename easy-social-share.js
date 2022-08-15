@@ -45,7 +45,7 @@ angular.module('td.easySocialShare', [])
 
         for (i = 0; i < shareLinks.length; i++) {
           var anchor = '';
-          anchor += '<a href="'+ shareLinks[i].url + '" alt="'+ shareLinks[i].title + shareLinks[i].network '" ';
+          anchor += '<a href="'+ shareLinks[i].url + '" alt="'+ shareLinks[i].title + shareLinks[i].network + '" ';
           anchor += ' class="fa fa-'+shareLinks[i].network + square + '" target="_blank"';
           anchor += '></a>';
           elem.append(anchor);
